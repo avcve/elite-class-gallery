@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f8f5ff;
+  margin: 0;
+  padding: 0;
+  color: #4a148c;
+}
+
+h1 {
+  background-color: #e1d5f6;
+  padding: 20px;
+  margin: 0;
+  font-size: 2em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(74, 20, 140, 0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #d1c4e9;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background-color: #ce93d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ba68c8;
+}
+
+/* 🌐 Responsive Styling for Mobile */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+  .slideshow {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100px;
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .slideshow {
+    padding: 10px;
+  }
+
+  button {
+    width: 90px;
+    font-size: 0.95em;
+  }
+}
